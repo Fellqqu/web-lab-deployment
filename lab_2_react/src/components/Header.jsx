@@ -2,7 +2,9 @@ function Header({ theme, toggleTheme }) {
   return (
     <header className="flex justify-between items-center bg-blue-600 text-white p-8 shadow-md">
       <div>
-        <h1 className="text-4xl font-bold mb-2 tracking-wide">Матвій Козак</h1>
+        <h1 className="text-4xl font-bold mb-2 tracking-wide">
+          Матвій Козак <span aria-hidden="true">🌊</span>
+        </h1>
         <p className="text-xl opacity-90 font-light">
           Студент спеціальності "Кібербезпека" | Розробник
         </p>
