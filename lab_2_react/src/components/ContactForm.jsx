@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 
+const contactFormDelayMs = 60_000;
+
 function ContactForm() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 3000);
+    }, contactFormDelayMs);
 
     return () => clearTimeout(timer);
   }, []);

@@ -41,12 +41,13 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${variantNumber}/comments`)
     .catch(error => {
         reviewsContainer.innerHTML = '<p style="color: red;">Помилка завантаження відгуків.</p>';
     });
-    const modal = document.getElementById('feedback-modal');
+const modal = document.getElementById('feedback-modal');
 const closeModalBtn = document.getElementById('close-modal');
+const contactFormDelayMs = 60_000;
 
 setTimeout(() => {
     modal.style.display = 'flex';
-}, 60000); 
+}, contactFormDelayMs);
 
 closeModalBtn.addEventListener('click', () => {
     modal.style.display = 'none';
