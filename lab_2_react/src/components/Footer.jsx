@@ -21,6 +21,9 @@ function Footer() {
       <p className="text-sm hover:text-blue-400 transition-colors cursor-pointer">
         Локація: м. Львів
       </p>
+      <p className="text-sm">
+        <a className="underline hover:text-blue-400" href="https://github.com/Fellqqu">Мій GitHub</a>
+      </p>
       {sysInfo.os && (
         <div className="mt-3 text-xs text-slate-500 space-y-1">
           <p><strong>Система:</strong> {sysInfo.os}</p>
